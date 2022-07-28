@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #9e1f1f;
+  background-color: #95cbd8;
+}
+
+#app {
+  padding: 2rem 10rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+
+  margin: 2.5rem 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  height: 3.2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem 0 0 0.4rem;
+  padding: 0 0.8rem;
+  background-color: #feffd3;
+  color: #030303;
+}
+
+.search button {
+  background-color: #d34545;
+  color: #ffffff;
+  border-radius: 0 0.4rem 0.4rem 0;
+  height: 3.2rem;
+  border: none;
+  padding: 0 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+  background-color: #ffffff;
+  color: #d34545;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table * {
+  font-size: 1.4rem;
+  color: #9e1f1f;
+}
+
+table th {
+  background: #d34545;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: 0.4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 0.4rem;
+}
+
+table tr:nth-child(even) {
+  background: #ddd;
+}
+
+table tr:nth-child(odd) {
+  background: #eee;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.pokemon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td .remove {
+  background: none;
+  border: none;
+
+  color: red;
+
+  cursor: pointer;
+}
+
+.remove img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.carvalho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.carvalho img {
+  width: auto;
+  height: 30rem;
+  margin: 0 auto;
+}
+
+.carvalho p {
+  font-size: 2rem;
+  font-weight: 700;
+}
