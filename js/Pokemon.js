@@ -10,5 +10,6 @@ export class Pokemon {
         sprite: data.sprites.front_default,
         type: data.types[0].type.name
       }))
+      .catch(e => alert("Pokémon não encontrado!", e))
     }
   }
