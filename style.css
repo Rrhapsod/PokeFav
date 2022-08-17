@@ -87,11 +87,11 @@ table th:last-child {
   border-top-right-radius: 0.4rem;
 }
 
-table tr:nth-child(even) {
+table tr.poke:nth-child(even) {
   background: #ddd;
 }
 
-table tr:nth-child(odd) {
+table tr.poke:nth-child(odd) {
   background: #eee;
 }
 
@@ -121,10 +121,14 @@ td .remove {
 }
 
 .carvalho {
+  display: table-cell;
+}
+
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7rem;
+  gap: 1rem;
 }
 
 .carvalho img {

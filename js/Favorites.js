@@ -74,10 +74,10 @@ export class FavoritesView extends Favorites {
     this.removeAllTr();
 
     this.entries.forEach((pokemon) => {
-      this.tbody.querySelectorAll("div").forEach((div) => {
+      this.tbody.querySelectorAll(".carvalho").forEach((div) => {
         div.remove();
       });
-      const row = this.createRow();
+      const row = this.createRowPokemon();
 
       row.querySelector(".pokemon img").src = pokemon.sprite;
       row.querySelector(".pokemon p").textContent =
@@ -97,21 +97,24 @@ export class FavoritesView extends Favorites {
   }
 
   createRowOak() {
-    const div = document.createElement("div");
-
-    div.innerHTML = `
-    <div class="carvalho">
-      <p>Que tal cadastrar um Pokémon Favorito?</p>
-      <img src="imgs/profoak.png" alt="Professor Carvalho">
-    </div>
-    `;
-
-    return div;
-  }
-
-  createRow() {
     const tr = document.createElement("tr");
 
+    tr.innerHTML = `
+    <td colspan="4" class="carvalho">
+      <div class="wrapper">
+      <p>Que tal cadastrar um Pokémon Favorito?</p>
+      <img src="imgs/profoak.png" alt="Professor Carvalho">
+      </div>
+    </td>
+    `;
+
+    return tr;
+  }
+
+  createRowPokemon() {
+    const tr = document.createElement("tr");
+
+    tr.classList.add("poke")
     tr.innerHTML = `
     <td class="pokemon">
       <img
